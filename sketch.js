@@ -29,9 +29,9 @@ function setup(){
     pig1 = new Pig(810, 350);
     log1 = new Log(810,260,300, PI/2);
 
-    box3 = new Box(700,240,70,70);
-    box4 = new Box(920,240,70,70);
-    pig3 = new Pig(810, 220);
+    box3 = new Box(700,240,90,90);
+    box4 = new Box(920,240,90,90);
+    pig3 = new Pigs(810, 220);
 
     log3 =  new Log(810,180,300, PI/2);
 
@@ -100,10 +100,10 @@ var responseJSON = await response.json();
 var datetime = responseJSON.datetime;
 var hour = datetime.slice(11,13);
 if(hour>06 && hour<19){
-    bg ="sprites/bg.png";
+    bg ="sprites/bg4.jpg";
 }
 else{
-    bg = "sprites/bg2.jpg";
+    bg = "sprites/bg3.jpg";
 }
 backgroundImg = loadImage(bg);
 console.log(backgroundImg);
